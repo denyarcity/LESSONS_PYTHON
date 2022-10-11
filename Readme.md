@@ -18,6 +18,14 @@ Example:
 5. Словари
 6. Множества
 7. Списки
+- 003 Ускоренная обработка данных: lambda, filter, map, zip numerate, List Comprehension
+1. Анонимные, lambda функции
+2. Функция map
+3. Функция filter
+4. Функция zip
+5. Функция enumerate 
+6. List Comprehension
+
 
 HomeWork:
 - 001
