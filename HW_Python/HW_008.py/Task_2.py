@@ -14,3 +14,46 @@
 Два класса: абстрактный и Clothes
 """
 
+from abc import ABC, abstractmethod
+
+class clothes(ABC):
+
+    @abstractmethod
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def get_cloth_count(self):
+        pass
+
+class coat(clothes):
+
+    def __init__(self, v):
+        self.v = v
+
+    @property
+    def get_cloth_count(self):
+        return self.v/6.5 + 0.5
+
+class suit(clothes):
+
+    def __init__(self, h):
+        self.h = h
+
+    @property
+    def get_cloth_count(self):
+        return self.h * 2 + 0.3
+
+
+c1 = coat(52)
+print(c1.get_cloth_count)
+
+c2 = coat(56)
+print(c2.get_cloth_count)
+
+
+s1 = suit(164)
+print(s1.get_cloth_count)
+
+s2 = suit(172)
+print(s2.get_cloth_count)
