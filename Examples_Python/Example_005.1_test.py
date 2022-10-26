@@ -32,11 +32,11 @@ class TestSalary(unittest.TestCase):
         self.assertEqual(get_salary('Лютиков Руслан 60 1000'),
                          ('Лютиков Руслан', 60000))
 
-    def test_get_salary_summ(self):
+    def test_get_salary_fio(self):
         self.assertEqual(get_salary('Лютиков Руслан 60 1000')
                          [0], ('Лютиков Руслан'))
 
-    def test_get_salary_summ(self):
+    def test_get_salary_empty(self):
         self.assertEqual(get_salary(''), ())
 
 if __name__=='__main__':
